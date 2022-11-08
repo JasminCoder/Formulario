@@ -1,0 +1,63 @@
+<doctype html!>
+<html lang="es">
+<!-- correo para contacto:  lanadas.jasmin@hotmail.com-->
+<html>
+    <Head>
+        <Title>Formulario contacto</Title>  
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="Formulario.css">
+
+        <!-- tipografía Tangerine -->
+        <link href="http://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css" />
+    </Head>
+    
+    <Body>
+
+        <h1>Formulario de Contacto</h1>
+
+        <p>
+            Envíanos tus dudas y/o consultas y responderemos a la brevedad!
+        </p>
+        <br>
+        <br>
+        <br>
+
+        <form autocomplete="off"  action="mailto:lanadas.jasmin@hotmail.com" method="post" enctype="text/plain">
+            <!--<input type="text" value ="Escribe tu Nombre">-->
+            
+            <label for="nombre"> Nombre y Apellido:</label>  <!-- en el for la va la variable del ID en este caso nombre-->
+            <input type="text" id="nombre" placeholder ="Escribe tu Nombre y luego tu apellido" required> <!--la propiedad NAME identifica toda la instruccion con el nombre,es importante cuando se procesan los datos-->
+            
+            <label for="mail"> Mail:</label>
+            <input type="email"  id="mail" placeholder="Escribe tu mail" required><!-- s nos permite comprobar que la estructura de un correo este bien escrito-->
+            
+            <!--Textarea : -->
+            <label for="mensaje"> Mensaje:</label>
+            <textarea id="mensaje" placeholder="Escribe tu Mensaje"></textarea>
+    
+            <div class="radio">
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" name="sexo" id="hombre">            
+                    
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" name="sexo" id="mujer">           
+            </div>
+            
+
+            <div class="fecha">
+                <label for="fecha">Ingrese o seleccione una  Fecha : </label> 
+                <input type="date" placeholder ="Fecha : " name="fecha" id="fecha">                        
+            </div>      
+    
+            <input type="submit" value="Enviar">
+            <br>
+            <br>
+            <input type="reset" value="Borrar datos">
+            <br>
+        
+        </form>
+
+    </body>
+</html>
+            
+    
